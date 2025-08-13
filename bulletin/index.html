@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .a4-container {
+      width: 210mm;
+      height: 297mm;
+      background: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      
+      padding: 20mm;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .a4-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .btn-commande {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .btn-commande:hover {
+      background-color: #218838;
+    }
+
+    @media print {
+      body {
+        background: none;
+        margin: 0;
+      }
+      .btn-commande {
+        display: none;
+      }
+      .a4-container {
+        box-shadow: none;
+        margin: 0;
+        width: 210mm;
+        height: 297mm;
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+<h1>Menu Tatou </h1>
+<body>
+
+<!-- Contenu A4 -->
+<div class="a4-container">
+  <img src="Orange and Black Modern Food Menu Menu.png" alt="Image A4">
+</div>
+
+<a href="https://www.appsheet.com/newshortcut/34ee39a9-bfeb-469f-9c65-f09211cd159d" class="btn-commande" target="_blank">
+  Passer commande
+</a>
+
+</body>
+</html>
